@@ -1,0 +1,242 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f8f8;  /* Light gray background */
+    color: #333;  /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333; /* Dark background for the header */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;  /* White logo text */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;  /* White links in the header */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #999;  /* Lighter gray on hover */
+}
+
+/* Hero Section */
+#hero {
+    height: 80vh;
+    background: #e0e0e0;  /* Light gray background */
+    color: #333;  /* Dark text for contrast */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta {
+    background-color: #333;  /* Dark button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #555;  /* Slightly lighter on hover */
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f8f8;  /* Light gray background for sections */
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;  /* Dark heading text */
+}
+
+.section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;  /* Medium gray text for paragraphs */
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;  /* White card background */
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Light shadow for cards */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;  /* Dark heading text */
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;  /* Medium gray text for card content */
+}
+
+.card:hover {
+    transform: translateY(-5px);  /* Lift the card on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;  /* Dark footer background */
+    color: #fff;  /* White text in the footer */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Half-Bubble Styling */
+.half-bubble {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);  /* Semi-transparent black bubble */
+    border-radius: 50%;  /* Creates the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%); /* Shift bubble into view */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
+}
+
+.half-bubble p {
+    font-size: 14px;
+    color: #333;  /* Dark gray text */
+    padding: 10px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+}
+.card-image {
+    width: 100%;  /* Make the image take the full width of the card */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Rounded corners for the image */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+    background-image: url('background-image.jpg'); /* Background image behind the button */
+    background-size: cover; /* Ensure the background covers the button */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.cta {
+    background-color: #333;  /* Dark button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #555;  /* Slightly lighter on hover */
+}
+footer {
+    background-color: #333;  /* Dark footer background */
+    color: #fff;  /* White text in the footer */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distributes space between left and right */
+    align-items: center; /* Aligns items vertically */
+}
+
+.footer-left {
+    flex: 1; /* Allows this section to take remaining space */
+    text-align: left; /* Aligns text to the left */
+}
+
+.footer-right {
+    flex: 1; /* Allows this section to take remaining space */
+    text-align: right; /* Aligns text to the right */
+}
+
+.social-icons {
+    display: inline-block; /* Allows spacing */
+    margin-left: 20px; /* Spacing between text and icons */
+}
+
+.social-icons a {
+    color: #fff; /* White icons */
+    text-decoration: none; /* Removes underline */
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.social-icons a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
