@@ -240,3 +240,24 @@ footer {
 .social-icons a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+/* Hero Section Styling */
+#hero {
+    height: 80vh;  /* Full height of the viewport */
+    background-image: url('image1.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: #fff;  /* White text for contrast */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative; /* Allows for the use of pseudo-elements if needed */
+    z-index: 1; /* Ensure it's above any other content */
+}
+
+.button-container {
+    position: relative; /* To allow for potential overlay effects */
+    display: inline-block;
+}
